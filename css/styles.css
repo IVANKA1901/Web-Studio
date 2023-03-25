@@ -296,6 +296,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
 
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -341,7 +347,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
      color: var(--third-text-color);
-     width: 320px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0px;
@@ -354,7 +360,7 @@ body {
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
-    width: 496px;
+    max-width: 496px;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -1207,6 +1213,7 @@ body {
     border-radius: 2px;
     transition: color var(--transition), background-color var(--transition);
     margin-right: 8px;
+    flex-shrink: 0;
 }
 .modal-checkbox-input:checked + .modal-checkbox-label > .modal-checkbox-custom {
     background-color: var(--secondary-accent-color);
@@ -1345,7 +1352,7 @@ margin-bottom: 40px;
 .adress-link-mobile-tel {
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize; 
@@ -1366,6 +1373,6 @@ margin-bottom: 40px;
 }
 .mobile-group-list {
     display: flex;
-    gap: 56px;
+    justify-content: space-between;
     margin: 0 auto;
 }
